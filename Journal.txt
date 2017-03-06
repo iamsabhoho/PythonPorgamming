@@ -1,0 +1,89 @@
+8/25: learn how powerful python is and getting to know more about git commands. 
+
+8/29: learned about the naming in python. identified the good and the bad naming and used them in the program we did in the class. wrote a simple program regarding counting surface area and volume for different shapes. 
+
+8/30: had an issue last night because when uploading the programs, it died. and when i checked this morning, i only uploaded the first program. as soon as i found out about it, i upload the second one. sorry for the late turn in.
+
+8/31: learned the if-else statement in python. it is different from the languages i have learned before. and some operations when using if-else statement. wrote a program regarding solar system. it is not done yet, and i have met some problems I’m not sure how to solve it. but will look up information about python later tonight to try finishing the program. 
+
+9/1: learned pycharm but somehow it was not working at first. and also looked up some information about boolean operations. and going to use it in the homework today. 
+
+9/5: got some feedback on the previous programs, will be changing based on the comments. did programs in class and learned new functions and skills to write python programs. hopefully will be learning more new stuff soon. 
+
+9/7: started the first task of today’s warm up and uploaded to the repository. will be working the second program as homework at home today and hopefully the third program too. used divmod and while loop in the program today. 
+
+9/8: added new functions to the rolling dice program and compared the 1000 rolls result with the 10000 rolls one. went through the task 3 program, which is about finding the minimum value of a given function. although have not finished in class, will continue working on this program at home.
+
+9/19: we were supposed to do several programs today but got stuck on the second task, which is the one asked to find the nth prime numbers. i down think the algorithm it self is that hard, but the logic inside is hard to understand. but at the very end of the class we were able to figure it out, almost. 
+
+9/26: test today. the test is really hard. the second task was fine but it takes time. the other two are the hardest because we had to correct the first flow diagram and for #3, there are so many functions, which makes it harder to organise. 
+
+9/28: Improve on the coffee machine and successfully completed the program. 
+
+9/29: Leanring functions in python today and trying to improve the coffee machine so it looks better. hopefully i i could found the way to simplify the equations and the diagram. 
+
+10/3: practiced with functions during the class today. and had a very intense homework/project coming up. hopefully i will be able to use the functions correctly to simplify the programs. 
+
+10/5: learned the list in python and practiced it with the python. keep working on the lego project. but it is really really hard to do it .-. 
+
+10/12: learned the list comprehension and did several examples in class. will be doing the challenge of the google counting. 
+
+10/13: keep working on the predicting word program. discuss the functions needed in the program and started to write the sudo codes of each functions. corrected the error of the ‘mastering function’ wup. 
+
+10/17: built up several functions for the predicting word challenge, tried it on an example. will be doing word generator for homework and generate 100 times. 
+
+10/20: learned more about list comp and did several small programs as practice today. will be working the other two programs tonight. 
+
+10/24: started working on the dictionaries in python. practiced some methods for dictionary and created some functions for it. will be figuring out how one of the function works. 
+
+11/7: continue working on the tic tac toe program. and continue working on the minimax ai algorithm. 
+
+11/10: continue working with the tic tac toe game. added several new functions, and solved the problem of the grid looking really bad. 
+
+11/14: worked on the homework that i got stuck during the weekend and it is almost finished with the help from the teachers and students. will be looking at the warm up later today. 
+
+11/16: started on the topic of recursion, and will be working on drawing out the trees later tonight. 
+
+11/17: continue working on the recursion to draw the triangle and improved the function of tree branches. but still failed to do so, will be looking more into recursion to improve the program. 
+
+11/21: worked on the pascal triangle with recursive for the first half period. finally get it done besides the format looks really bad. also, started using recursive in the tic tac toe game. 
+
+11/23: continue working on the tic tac toe game, generate several issues. T^T 
+
+11/24: finally done fixing the problems with the checking score function. will be working on generating the best child during the weekend. 
+
+11/28: did final practice on recursive. and started learning string methods and have some work to do at home.    
+
+11/30: spent some of the class time doing the pluralizer and found out there are so many exceptions in english, which we had to include some of them in the program. 
+
+12/1: started with encrypting and decrypting the code with key. got some encrypted codes that we have to write a program to decrypt it without knowing the key. 
+
+12/5: new project: build a vocab. 
+
+12/7: keep building the vocab program and improved some of its functions. 
+
+12/8: working on the different sorting algorithms, including bubble sorts on the vocal program. 
+
+12/12: working on the insertion sort on the programs, and found out that insertion sort is faster than bubble sort. 
+
+12/14: started a new project —> getting 500 xp on the codeingame.com. solved the first easy tasks, started working on the second one. 
+
+12/15: keep playing the games on codinggame.com, to solve the 500 xp mission. but the tasks are hard, i found it a bit hard to solve the missions.
+
+1/23: came back from cissmun trying to catch up what was left during the conference. installed ubuntu on virtual box today, and will start programming the game next time. 
+
+2/6: first day of school after cny, i got my pi already, so i started to install it. 
+
+2/9: because other people’s pi are not here yet, so we started the state machine. 
+
+2/13: the pi are finally here, although I’m done with most of the installations, i was chasing my resolution today. also i was trying to install my LCD touch screen, but failed and had to reformat it. 
+
+2/17: trying to find the IP address without connecting to the computer, but couldn’t really find it in that way. 
+
+2/20: working on the wup, traffic light. drew the state diagram trying to figure out how to make the traffic light work. 
+
+2/22: working on the snake game, trying to make it eat the apple. and we were also doing the state machine. 
+
+2/23: writing a program that allows the character to walk in different directions. 
+
+3/1: working on the drawing the random sizes in random coordinates circles in pygame. 
