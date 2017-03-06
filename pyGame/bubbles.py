@@ -71,7 +71,7 @@ def new_particles(n = 50):
         speed = random.random()
         angle = random.uniform(0, math.pi*2)
         colour = (random.randint(0,225), random.randint(0,225),0)
-        group_particle.append(particles(x=x, y=y, size=size, speed=speed, angle=angle))
+        group_particle.append(particle(x=x, y=y, size=size, speed=speed, angle=angle))
 
 def add_vectors(vector1, vector2):
     """
@@ -131,6 +131,7 @@ def bounce(particle):
 
 
 
+particle = particle()
 
 mouse_click = False
 
