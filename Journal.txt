@@ -89,3 +89,5 @@
 3/1: working on the drawing the random sizes in random coordinates circles in pygame.
 
 3/6: worked on the moving bubbles with mouse and it works. :D also created a new repo on git so everything can be pushed smoothly now.  
+
+3/9: use OOP to write bubbles. 
