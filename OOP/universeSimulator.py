@@ -55,7 +55,7 @@ class Particle():
         pygame.draw.circle(screen,
                            self.color,
                            (int(self.x), int(self.y)),
-                           self.size,
+                           int(self.size),
                            self.thickness)
 
     def accelerate(self, angle, speed):
@@ -158,10 +158,10 @@ set_particles = list()
 for i in range(num_particles):
     mass = min_mass + 0.5 * max_mass * random.random()
 
-    size = int(calculateSize(mass))
+    size = calculateSize(mass)
 
-    x = random.randint(size, width-size)
-    y = random.randint(size, height-size)
+    x = random.randint(0, width)
+    y = random.randint(0, height)
 
     angle = random.uniform(0, 2*math.pi)
 
