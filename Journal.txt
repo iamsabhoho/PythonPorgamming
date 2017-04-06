@@ -99,3 +99,7 @@
 3/16: working on the final project, was reading through the old project doc. 
 
 3/22: still working on the midterm project. wasn’t able to display anything yet. 
+
+4/5: started GUI and watched a short vid about it today. 
+
+4/6: wrote a calories and cookie converter and will add text under the window later. 
