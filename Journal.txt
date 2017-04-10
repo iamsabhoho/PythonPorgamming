@@ -103,3 +103,5 @@
 4/5: started GUI and watched a short vid about it today. 
 
 4/6: wrote a calories and cookie converter and will add text under the window later. 
+
+4/10: started new tasks on GUI and learned about layout for gui. 
