@@ -21,7 +21,7 @@ class Grades(QWidget):
         self.b1.setPlaceholderText('Enter grade 0-100')
         self.b1.textChanged.connect(self.convert)
         self.b1.setMinimumHeight(50)
-        self.b1.setFont(QFont("Arial", 20))
+        self.b1.setFont(QFont("Arial",20))
         self.setStyleSheet(qss)
 
         self.b2 = QLineEdit(self)
