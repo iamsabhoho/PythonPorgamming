@@ -107,3 +107,5 @@
 4/10: started new tasks on GUI and learned about layout for gui. 
 
 4/13: started the presentation/tutorial on different widgets. only gone through two but those two are super interesting! 
+
+4/15: presented my widget today, it was QCalenderQidget. and also learned other two different widgets that one of them turn out is also used in my application. 

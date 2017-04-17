@@ -1,7 +1,6 @@
 import sys
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QCalendarWidget
+from PyQt5.QtCore import QDate
 
 class Example(QWidget):
    def __init__(self):
@@ -11,25 +10,23 @@ class Example(QWidget):
 
    def initUI(self):
 
+      self.setGeometry(100, 100, 400, 300)
+      self.setWindowTitle('Calendar Demo')
+
       cal = QCalendarWidget(self)
-      cal.setGridVisible(True)
+      cal.setGridVisible(True) #one of the function
       cal.move(20, 20)
       cal.clicked[QDate].connect(self.showDate)
 
-      #lbl = label widgets
-
-      self.lbl = QLabel(self)
-      date = cal.selectedDate()
-      self.lbl.setText(date.toString())
-      self.lbl.move(20, 200)
-
-      self.setGeometry(100, 100, 400, 300)
-      self.setWindowTitle('Calendar')
+      self.label = QLabel(self)
+      date = cal.selectedDate() #another function
+      self.label.setText(date.toString())
+      self.label.move(20, 200)
 
       self.show()
 
    def showDate(self, date):
-      self.lbl.setText(date.toString())
+      self.label.setText(date.toString())
 
 
 # --- main program
