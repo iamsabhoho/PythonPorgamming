@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="449119e0-46e4-444c-a41d-71333539fa3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI/Demo/Daniel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI/Demo/Stephaine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI/Demo/Cici.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI/Demo/mixWidgets.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Sabrina/demo.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI/demo.py" afterPath="$PROJECT_DIR$/GUI/demo.py" />
     </list>
     <ignored path="PythonProgramming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,22 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Daniel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/Demo/Daniel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
+            <state relative-caret-position="690">
               <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding>
                 <element signature="e#14#30#0" expanded="true" />
@@ -53,7 +41,7 @@
       <file leaf-file-name="Stephaine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/Demo/Stephaine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="270">
               <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#8#18#0" expanded="true" />
@@ -62,13 +50,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Darren.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Darren.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/Demo/Darren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="480">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="e#13#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cici.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI/Demo/Cici.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <element signature="e#12#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mixWidgets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GUI/Demo/mixWidgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding>
+                <element signature="e#56#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +89,8 @@
       <file leaf-file-name="Alex.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/Demo/Alex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+            <state relative-caret-position="588">
+              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding>
                 <element signature="e#11#21#0" expanded="true" />
               </folding>
@@ -123,6 +135,8 @@
         <option value="$PROJECT_DIR$/GUI/Demo/Stephaine.py" />
         <option value="$PROJECT_DIR$/GUI/Demo/Daniel.py" />
         <option value="$PROJECT_DIR$/GUI/demo.py" />
+        <option value="$PROJECT_DIR$/GUI/Demo/Cici.py" />
+        <option value="$PROJECT_DIR$/GUI/Demo/mixWidgets.py" />
       </list>
     </option>
   </component>
@@ -216,7 +230,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.demo">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GUI/Sabrina" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Cici">
     <configuration default="false" name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,24 +248,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonProgramming" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Darren" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI/Demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonProgramming" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/Demo/Darren.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/Sabrina/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -298,6 +300,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonProgramming" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/Demo/Daniel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Cici" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI/Demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonProgramming" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/Demo/Cici.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -451,18 +470,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.demo" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Darren" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Alex" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Stephaine" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Daniel" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Alex" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Stephaine" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Daniel" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Cici" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.demo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Daniel" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Stephaine" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Alex" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Darren" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Cici" />
+        <item index="1" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Daniel" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Stephaine" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Alex" />
       </list>
     </recent_temporary>
   </component>
@@ -505,13 +524,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/muslides/mitigateMudslides.py" />
-    <entry file="file://$PROJECT_DIR$/muslides/mudLib.py" />
     <entry file="file://$PROJECT_DIR$/OOP/physicalMachine.py" />
     <entry file="file://$PROJECT_DIR$/OOP/universeSimulator.py" />
     <entry file="file://$PROJECT_DIR$/muslides/mitigateMudslides.py" />
@@ -612,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/Demo/Stephaine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="270">
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#8#18#0" expanded="true" />
@@ -620,9 +637,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/Sabrina/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/Demo/Darren.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#13#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/Demo/Daniel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
+        <state relative-caret-position="690">
           <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
           <folding>
             <element signature="e#14#30#0" expanded="true" />
@@ -630,32 +665,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/Demo/Alex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+        <state relative-caret-position="588">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
           <folding>
             <element signature="e#11#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/Demo/Darren.py">
+    <entry file="file://$PROJECT_DIR$/GUI/Demo/Cici.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
-            <element signature="e#13#23#0" expanded="true" />
+            <element signature="e#12#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/Demo/mixWidgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#56#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
