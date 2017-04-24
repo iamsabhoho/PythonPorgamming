@@ -111,3 +111,5 @@
 4/15: presented my widget today, it was QCalenderQidget. and also learned other two different widgets that one of them turn out is also used in my application. 
 
 4/20: cici presented the last widget, and we are starting to combine all the ones that we learned from other classmates to write a mix program. 
+
+4/24: still working on the ultimate GUI, have new thoughts for it. 

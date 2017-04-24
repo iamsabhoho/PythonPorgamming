@@ -17,14 +17,9 @@ class dockDemo(QWidget):
         self.dock1.move(20, 20)
         self.dock1.setWidget(self.btn1)
         self.dock1.setFloating(False)
-        #self.dock1.setFeatures(self.dock1.DockWidgetClosable|self.dock1.DockWidgetMovable)
         self.dock1.setFeatures(self.dock1.AllDockWidgetFeatures)
 
-
-
         self.show()
-
-
 
 # --- main program
 app = QApplication(sys.argv)
