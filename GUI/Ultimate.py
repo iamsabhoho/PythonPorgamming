@@ -2,6 +2,13 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QCheckBox, QProgressBar,\
     QDockWidget, QCalendarWidget, QLabel, QTabWidget, QComboBox, QLineEdit, QFormLayout
 
+qss = 'QWidget{background-color: rgb(50, 50, 50);}' \
+      'QLineEdit{color: white;}' \
+      'QLineEdit#grade{background-color: rgb(150, 150, 150);' \
+      'font: 100 14pt bold "Courier";' \
+      'border: 2px;' \
+      'color:white;}'
+
 class Ultimate(QTabWidget):
     def __init__(self):
         super().__init__()
@@ -16,12 +23,14 @@ class Ultimate(QTabWidget):
         self.tab3 = QWidget()
 
         self.addTab(self.tab1, "Registration")
-        self.addTab(self.tab2, "Choose your form")
+        self.addTab(self.tab2, "Choose sparring/poomsae")
         self.addTab(self.tab3, "Done")
 
         self.tab_1()
         self.tab_2()
         self.tab_3()
+
+        self.setStyleSheet(qss)
 
         self.show()
 
@@ -58,7 +67,6 @@ class Ultimate(QTabWidget):
 
 
 
-
     def tab_2(self):
         layout = QFormLayout()
         self.tab2.setLayout(layout)
@@ -66,6 +74,13 @@ class Ultimate(QTabWidget):
         self.pb.setValue(50)
         self.lb = QLabel(self)
         self.cb = QComboBox(self)
+        self.cb1 = QComboBox(self)
+
+        self.cb1.addItem("Flyweight")
+        self.cb1.addItem("Featherweight")
+        self.cb1.addItem("Welterweight")
+        self.cb1.addItem("Heavyweight")
+
         self.cb.addItem("1")
         self.cb.addItem("2")
         self.cb.addItem("3")
@@ -74,9 +89,16 @@ class Ultimate(QTabWidget):
         self.cb.addItem("6")
         self.cb.addItem("7")
         self.cb.addItem("8")
+
         self.btn1 = QPushButton('->', self)
         self.btn1.clicked.connect(self.nextTab)
         layout.addRow(self.pb)
+
+        layout.addWidget(QLabel("Sparring or Poomsae?"))
+        layout.addWidget(QCheckBox("Sparring"))
+        layout.addWidget(QCheckBox("Poomsae"))
+
+        layout.addRow('Choose weight:', self.cb1)
         layout.addRow('Choose form:', self.cb)
         layout.addRow('Next Section', self.btn1)
 
@@ -89,6 +111,12 @@ class Ultimate(QTabWidget):
         self.lb.setText("You are now done with the registration ;)")
         layout.addRow(self.pb)
         layout.addRow(self.lb)
+
+        # --- read information from other two tabs
+        # --- use dictionary
+
+
+
 
     def nextTab(self):
         print(self.currentIndex())
