@@ -88,3 +88,9 @@ class Ui_Form(object):
         self.comboBox.setItemText(3, _translate("Form", "4 years"))
         self.comboBox.setItemText(4, _translate("Form", "5 years"))
 
+    def calculate(self):
+        principal = self.principalbox.value()
+        rate = self.ratebox.value()
+        years = self.yearBox.currentIndex()+1
+        amount = principal * ((1+(rate/100.0)) ** years)
+        self.labelResult.setText("$ {0: .2f}".format.amount)

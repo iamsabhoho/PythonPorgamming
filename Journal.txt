@@ -117,3 +117,5 @@
 4/27: finished ultimate gui.
 
 5/1: start using qt designer, its easier when designing, but need to work the converting ui to py. 
+
+5/3: mr.buscher was subbing for today’s class and we worked on the wup. i converted it into python code but its somehow not working.-. 
