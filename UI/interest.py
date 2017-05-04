@@ -64,14 +64,14 @@ class Ui_Form(object):
         self.formLayout.setItem(4, QtWidgets.QFormLayout.FieldRole, spacerItem)
         self.comboBox = QtWidgets.QComboBox(self.formLayoutWidget)
         self.comboBox.setObjectName("comboBox")
-
-        self.comboBox.addItem(["{} years".format(x) for x in range(2,20)])
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.comboBox)
+
         self.retranslateUi(Form)
-
-        # --- connect signals
-        self.principalbox.updated
-
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -88,9 +88,3 @@ class Ui_Form(object):
         self.comboBox.setItemText(3, _translate("Form", "4 years"))
         self.comboBox.setItemText(4, _translate("Form", "5 years"))
 
-    def calculate(self):
-        principal = self.principalbox.value()
-        rate = self.ratebox.value()
-        years = self.yearBox.currentIndex()+1
-        amount = principal * ((1+(rate/100.0)) ** years)
-        self.labelResult.setText("$ {0: .2f}".format.amount)
