@@ -120,4 +120,6 @@
 
 5/3: mr.buscher was subbing for today’s class and we worked on the wup. i converted it into python code but its somehow not working.-. 
 
-5/4: finally got the UIs working by using the other program. working on the finding word and replacing them code from yesterday. 
+5/4: finally got the UIs working by using the other program. working on the finding word and replacing them code from yesterday.
+
+5/15: haven’t come to class for a week because of ap, but I’ve started working on the sine and cosine functions. 

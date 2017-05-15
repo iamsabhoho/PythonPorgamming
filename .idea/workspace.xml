@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="449119e0-46e4-444c-a41d-71333539fa3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/findWord.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/interesttest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/replacetest.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UI/5:3wup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UI/5:3wup.ui" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/sinecosine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Journal.txt" afterPath="$PROJECT_DIR$/Journal.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/interest.py" afterPath="$PROJECT_DIR$/UI/interest.py" />
     </list>
     <ignored path="PythonProgramming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +35,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findWord.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="findWord.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/findWord.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sinecosine.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UI/sinecosine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,9 +115,10 @@
         <option value="$PROJECT_DIR$/UI/1.py" />
         <option value="$PROJECT_DIR$/UI/interest.py" />
         <option value="$PROJECT_DIR$/UI/findWord.py" />
-        <option value="$PROJECT_DIR$/UI/test.py" />
         <option value="$PROJECT_DIR$/UI/interesttest.py" />
         <option value="$PROJECT_DIR$/UI/replacetest.py" />
+        <option value="$PROJECT_DIR$/UI/test.py" />
+        <option value="$PROJECT_DIR$/UI/sinecosine.py" />
       </list>
     </option>
   </component>
@@ -132,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,7 +187,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,24 +199,7 @@
       <recent name="$PROJECT_DIR$/GUI/Sabrina" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.replacetest">
-    <configuration default="false" name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonProgramming" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.sinecosine">
     <configuration default="false" name="interest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,6 +264,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonProgramming" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/replacetest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sinecosine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonProgramming" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/sinecosine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -413,19 +433,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.interest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.5:3wup" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.replacetest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.interest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.5:3wup" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.replacetest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.sinecosine" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.replacetest" />
+        <item index="0" class="java.lang.String" itemvalue="Python.sinecosine" />
         <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.5:3wup" />
-        <item index="3" class="java.lang.String" itemvalue="Python.interest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.replacetest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.5:3wup" />
+        <item index="4" class="java.lang.String" itemvalue="Python.interest" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OOP/physicalMachine.py" />
     <entry file="file://$PROJECT_DIR$/pyGame/bubbles.py" />
     <entry file="file://$PROJECT_DIR$/OOP/Engineer.py" />
     <entry file="file://$PROJECT_DIR$/OOP/physicalMachine.py" />
@@ -614,14 +633,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/1.py" />
-    <entry file="file://$PROJECT_DIR$/UI/5:3wup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/5:3wup.py" />
     <entry file="file://$PROJECT_DIR$/UI/interest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -634,17 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="2" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,9 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,6 +661,26 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/sinecosine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
