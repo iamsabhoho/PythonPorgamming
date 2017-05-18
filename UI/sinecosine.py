@@ -1,141 +1,162 @@
 import sys
 from PyQt5 import QtGui, QtWidgets, QtCore
-from PyQt5.QtWidgets import QDockWidget, QVBoxLayout
+from PyQt5.QtWidgets import QDockWidget,  QVBoxLayout
 from PyQt5.QtCore import Qt
 import pyqtgraphdev.pyqtgraph as pt
 from pyqtgraphdev.pyqtgraph import PlotWidget
 import numpy as np
 import time
 
-class Sine(QDockWidget):
-    def __init__(self, parent=None):
-        super(Sine, self).__init__(parent=parent)
+
+class CosGraph(QDockWidget):
+    def __init__(self, parent = None):
+        super(CosGraph, self).__init__(parent=parent)
         self.setContextMenuPolicy(Qt.NoContextMenu)
-        self.hostPlot = QtWidgets.QWidget(self)
-        self.hostPlot.setObjectName("hostPlot")
-        self.hostPlot.setSizePolicy(QtGui.QSizePolicy.Maximum,QtGui.QSizePolicy.Maximum)
-        self.hostPlot.setMinimumSize(500,200)
-        self.grPlot = PlotWidget(self)
-        self.grPlot.plotItem.showGrid(True, True, 0.7)
-        self.grPlot.setObjectName("grPlot")
-        self.grPlot.raise_()
-        self.grPlot.raise_()
-        self.grPlot.raise_()
+        # -- container for histogram (same as graph)
+        self.host = QtWidgets.QWidget(self)
+        self.host.setObjectName("Cosine Graph")
+        self.host.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
+        self.host.setMinimumSize(500, 200)
+        # -- define the histogram
+        self.graph = PlotWidget(self)
+        # -- horizontal, vertical lines, and thickness
+        self.graph.plotItem.showGrid(True, True, 0.7)
+        self.setObjectName("cos_graph")
+        self.graph.raise_()
+        # -- add graph container to layout
+        self.verticalLayout = QVBoxLayout(self.host)
+        self.verticalLayout.addWidget(self.graph)
 
-        self.btnAdd = QtWidgets.QPushButton(self)
-        self.btnAdd.setObjectName("btnAdd")
-        self.btnAdd.setText("Refresh")
+    def plot(self, cos_data):
+        X = cos_data['X']
+        Y = cos_data['Y']
+        colorLine = cos_data['pen']
+        self.graph.plot(X, Y, pen=colorLine, clear=True)
 
-        self.verticalLayout = QVBoxLayout(self.hostPlot)
-        self.verticalLayout.addWidget(self.grPlot)
-        self.verticalLayout.addWidget(self.btnAdd)
 
     def resizeEvent(self, e):
-        self.hostPlot.setGeometry(10,10, e.size().width(), e.size().height())
-        self.grPlot.setGeometry(10,10, e.size().width(), 0.9*e.size().height())
-        print('resized')
+        self.host.setGeometry(10, 10, e.size().width(), e.size().height())
+        self.graph.setGeometry(10, 10, e.size().width(), 0.9 * e.size().height())
 
-    def plot(self, data):
-        X = data['X']
-        Y = data['Y']
-        pen = data['pen']
-        self.grPlot.plot()
-
-
-class Cosine(QDockWidget):
-    def __init__(self, parent=None):
-        super(Cosine, self).__init__(parent=parent)
+class SinGraph(QDockWidget):
+    def __init__(self, parent = None):
+        super(SinGraph, self).__init__(parent=parent)
         self.setContextMenuPolicy(Qt.NoContextMenu)
-        self.hostPlot = QtWidgets.QWidget(self)
-        self.hostPlot.setObjectName("hostPlot")
-        self.hostPlot.setSizePolicy(QtGui.QSizePolicy.Maximum,QtGui.QSizePolicy.Maximum)
-        self.hostPlot.setMinimumSize(500,200)
-        self.grPlot = PlotWidget(self)
-        self.grPlot.plotItem.showGrid(True, True, 0.7)
-        self.grPlot.setObjectName("grPlot")
-        self.grPlot.raise_()
-        self.grPlot.raise_()
+        # -- container for graph
+        self.host = QtWidgets.QWidget(self)
+        self.host.setObjectName("Sine Graph")
+        self.host.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
+        self.host.setMinimumSize(500, 200)
+        # -- define the graph
+        self.graph = PlotWidget(self)
+        # -- horizontal, vertical lines, and thickness
+        self.graph.plotItem.showGrid(True, True, 0.7)
+        self.setObjectName("sin_graph")
+        self.graph.raise_()
+        # -- add graph container to layout
+        self.verticalLayout = QVBoxLayout(self.host)
+        self.verticalLayout.addWidget(self.graph)
 
-        self.verticalLayout = QVBoxLayout(self.hostPlot)
-        self.verticalLayout.addWidget(self.grPlot)
+    def plot(self, sin_data):
+        '''
+        :param sin data: dictionary with X, Y sin data
+        :return: None
+        '''
+        X = sin_data['X']
+        Y = sin_data['Y']
+        colorLine = sin_data['pen']
+        self.graph.plot(X, Y, pen=colorLine, clear=True)
 
     def resizeEvent(self, e):
-        self.hostPlot.setGeometry(10,10, e.size().width(), e.size().height())
-        self.grPlot.setGeometry(10,10, e.size().width(), 0.9*e.size().height())
+        self.host.setGeometry(10, 10, e.size().width(), e.size().height())
+        self.graph.setGeometry(10, 10, e.size().width(), 0.9 * e.size().height())
 
-    def hist(self, data):
-        Y = data['Y']
-        pen = data['pen']
-        y, x = np.histogram(Y)
-        self.grPlot.clear()
-        self.grPlot.plot()
 
-class SinCo(QDockWidget):
-    def __init__(self, parent=None):
-        super(SinCo, self).__init__(parent=parent)
+class RadioGraph(QDockWidget):
+    def __init__(self, parent = None):
+        super(RadioGraph, self).__init__(parent=parent)
         self.setContextMenuPolicy(Qt.NoContextMenu)
-        self.hostPlot = QtWidgets.QWidget(self)
-        self.hostPlot.setObjectName("hostPlot")
-        self.hostPlot.setSizePolicy(QtGui.QSizePolicy.Maximum,QtGui.QSizePolicy.Maximum)
-        self.hostPlot.setMinimumSize(500,200)
-        self.grPlot = PlotWidget(self)
-        self.grPlot.plotItem.showGrid(True, True, 0.7)
-        self.grPlot.setObjectName("grPlot")
-        self.grPlot.raise_()
-        self.grPlot.raise_()
+        # -- container for histogram (same as graph)
+        self.host = QtWidgets.QWidget(self)
+        self.host.setObjectName("Radio Graph")
+        self.host.setSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Maximum)
+        self.host.setMinimumSize(500, 200)
+        # -- define the histogram
+        self.graph = PlotWidget(self)
+        # -- horizontal, vertical lines, and thickness
+        self.graph.plotItem.showGrid(True, True, 0.7)
+        self.setObjectName("radio_graph")
+        self.graph.raise_()
+        # -- add graph container to layout
+        self.verticalLayout = QVBoxLayout(self.host)
+        self.verticalLayout.addWidget(self.graph)
 
-        self.verticalLayout = QVBoxLayout(self.hostPlot)
-        self.verticalLayout.addWidget(self.grPlot)
+    def plot(self, radio_data):
+        X = radio_data['X']
+        Y = radio_data['Y']
+        colorLine = radio_data['pen']
+        self.graph.plot(X, Y, pen=colorLine, clear=True)
+
 
     def resizeEvent(self, e):
-        self.hostPlot.setGeometry(10,10, e.size().width(), e.size().height())
-        self.grPlot.setGeometry(10,10, e.size().width(), 0.9*e.size().height())
+        self.host.setGeometry(10, 10, e.size().width(), e.size().height())
+        self.graph.setGeometry(10, 10, e.size().width(), 0.9 * e.size().height())
 
-    def hist(self, data):
-        Y = data['Y']
-        pen = data['pen']
-        y, x = np.histogram(Y)
-        self.grPlot.clear()
-        self.grPlot.plot()
 
-class SandboxApp(QtWidgets.QApplication):
-    def __init__(self, *args, **kwargs):
-        super(SandboxApp, self).__init__(*args)
-        self.mainwindow = MainWindow()
-        self.mainwindow.setGeometry(50,100,1200,600)
-        self.mainwindow.show()
-        self.mainwindow.setContextMenuPolicy(Qt.NoContextMenu)
-
-class MainWindow(QtWidgets.QMainWindow):
-    def __init__(self, parent=None):
-        super(MainWindow, self).__init__(parent=parent)
+class Mainwindow(QtWidgets.QMainWindow):
+    def __init__(self, parent = None):
+        super(Mainwindow, self).__init__(parent=parent)
         self.setDockOptions(QtWidgets.QMainWindow.AllowNestedDocks | QtWidgets.QMainWindow.AnimatedDocks)
-        self.SineD = Sine()
-        self.CosineD = Cosine()
-        self.SinCoD = SinCo()
-        self.addDockWidget(Qt.LeftDockWidgetArea, self.SineD)
-        self.addDockWidget(Qt.RightDockWidgetArea, self.CosineD)
-        self.addDockWidget(Qt.RightDockWidgetArea, self.SinCoD)
+        # -- create docks
+        self.cos_dockGraph = CosGraph()
+        self.sin_dockGraph = SinGraph()
+        self.radio_dockGraph = RadioGraph()
+        self.addDockWidget(Qt.LeftDockWidgetArea, self.cos_dockGraph)
+        self.addDockWidget(Qt.LeftDockWidgetArea, self.sin_dockGraph)
+        self.addDockWidget(Qt.RightDockWidgetArea, self.radio_dockGraph)
         self.update()
 
     def update(self):
-        t = np.arange(0 , 20, 20/2000)
-        i = 0.1
-        s = np.sin(2 * np.pi * t + i)
-        c = np.cos(2 * np.pi * t + i)
+        Npoints = 2000
+        f_m = 0.1
+        X = np.arange(0, 20, 20/Npoints)
+        cos_Y = np.cos(2 * np.pi * f_m * X)
 
-        C=pt.hsvColor(time.time()/5%1,alpha=.5)
-        pen=pt.mkPen(color=C,width=2)
-        data = {'X':s, 'Y':c, 'pen':pen}
-        self.SineD.plot(data)
-        self.CosineD.hist(data)
-        self.SinCoD.hist(data)
-        QtCore.QTimer.singleShot(100, self.update) # QUICKLY repeat
+        A = 5
+        f_c = 1
+        sin_Y = A * np.sin(2 * np.pi * f_c * X)
+        # -- every second we change color with this command
+        C = pt.hsvColor(time.time() / 5 % 1, alpha = 0.5)
 
+        M = 1
+        radio_Y = (1 + M * np.cos(2* np.pi * f_m * X)) * A * np.sin(2 * np.pi * f_c * X)
+
+        # -- Pyqtgraph wrapper for the line.
+        pen = pt.mkPen(color = C, width = 2)
+        cos_data = {'X':X, 'Y':cos_Y, 'pen':pen}
+        self.cos_dockGraph.plot(cos_data)
+        sin_data = {'X':X, 'Y':sin_Y, 'pen':pen}
+        self.sin_dockGraph.plot(sin_data)
+        radio_data = {'X':X, 'Y':radio_Y, 'pen':pen}
+        self.radio_dockGraph.plot(radio_data)
+        # -- refresh rate of 100 ms
+        QtCore.QTimer.singleShot(100, self.update)
+
+
+class SandBoxApp(QtWidgets.QApplication):
+    # -- define class constructor
+    def __init__(self, *args, **kwargs):
+        super(SandBoxApp, self).__init__(*args)
+        self.mainwindow = Mainwindow()
+        self.mainwindow.setGeometry(50, 100, 1200, 600)
+        self.mainwindow.show()
+        # -- disable contextual menu (right click mouse)
+        self.mainwindow.setContextMenuPolicy(Qt.NoContextMenu)
+
+# -- entry point for the Python program
 def main():
-    app = SandboxApp(sys.argv)
+    app = SandBoxApp(sys.argv)
     sys.exit(app.exec_())
-
 
 if __name__ == "__main__":
     main()

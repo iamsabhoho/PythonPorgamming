@@ -123,3 +123,7 @@
 5/4: finally got the UIs working by using the other program. working on the finding word and replacing them code from yesterday.
 
 5/15: haven’t come to class for a week because of ap, but I’ve started working on the sine and cosine functions. 
+
+5/17: second to the last class, working on images in python. 
+
+5/18: last python class, still working on color and images in python. trying to extract yellow from the muffin picture. 
